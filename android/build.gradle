@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-    api(name: 'merchant-1.0.24', ext: 'aar')
+    api(name: 'merchant-1.0.25', ext: 'aar')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.squareup.okhttp3:okhttp:4.2.2"
     implementation 'com.google.code.gson:gson:2.8.6'
