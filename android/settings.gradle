@@ -1,1 +1,2 @@
+include ':flutter_hl_vnpay'
 rootProject.name = 'flutter_hl_vnpay'
