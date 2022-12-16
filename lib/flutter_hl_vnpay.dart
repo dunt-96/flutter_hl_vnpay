@@ -1,11 +1,11 @@
-
 import 'dart:async';
 
 import 'package:flutter/services.dart';
 
 class FlutterHlVnpay {
   final MethodChannel _channel = const MethodChannel('flutter_hl_vnpay');
-  final StreamController<MethodCall> _methodStreamController = new StreamController.broadcast();
+  final StreamController<MethodCall> _methodStreamController =
+      new StreamController.broadcast();
   Stream<MethodCall> get _methodStream => _methodStreamController.stream;
 
   FlutterHlVnpay._() {
@@ -30,7 +30,6 @@ class FlutterHlVnpay {
     String endColor = '#00B14F',
     String titleColor = '#FFFFFF',
   }) async {
-
     final params = <String, dynamic>{
       "scheme": scheme,
       "isSandbox": isSandbox,
@@ -49,6 +48,7 @@ class FlutterHlVnpay {
         return m.arguments['resultCode'] as int?;
       }
     }
+    return null;
   }
 
   Map<String, dynamic> sortParams(Map<String, dynamic> params) {
